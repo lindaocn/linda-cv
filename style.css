@@ -1,307 +1,222 @@
-/* Color Palette & Font */
 :root {
-    --white: #ffffff;
-    --black: #000000;
-    --dark-blue: #2167CE;
-    --light-blue: #D9F0FF;
-    --blue-c1-c2: #6FA2D7; /* Ein mittleres Blau für die C1/C2 Kreise */
-    --font: 'Poppins', sans-serif;
-    --border-radius: 10px;
+    --primary-color: #2167CE;
+    --secondary-color: #D9F0FF;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+    --border-radius: 12px;
 }
 
-/* Global Styles and Base Layout */
 body {
-    font-family: var(--font);
-    line-height: 1.5;
-    margin: 0;
-    padding: 30px;
-    background-color: var(--light-blue);
-    color: var(--black);
-    display: flex;
-    justify-content: center;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
-.resume-container {
-    width: 210mm;
-    background: var(--white);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    border-radius: var(--border-radius);
-    overflow: hidden; 
-}
-
-/* HEADER BLOCK */
-.header {
-    background-color: var(--light-blue);
-    padding: 25px 40px;
-    margin-bottom: 30px;
-    border-radius: var(--border-radius);
-    
-    /* Grid-Struktur für Links | Rechts */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-    position: relative;
-    gap: 150px; 
-
-    /* Profilbild als zentrales Hintergrundbild */
-    background-image: url('portrait.png'); 
-    background-repeat: no-repeat;
-    background-position: center center; 
-    background-size: 57%; 
-}
-
-/* 1. Header Left (Name & Objective) */
-.header-left {
-    padding-right: 10px;
-    position: relative;
-    z-index: 1; 
-}
-
-.name {
-    margin: 0;
-    font-size: 2.8em;
+h1,
+h2,
+h3{
     font-weight: 700;
-    line-height: 1;
-    color: var(--dark-blue);
-    text-transform: uppercase;
+    color: var(--primary-color);
 }
 
-.objective {
-    font-size: 1.1em;
-    font-weight: 300;
-    margin: 10px 0 0 0;
-    max-width: 100%;
-}
-
-.badge {
-    display: inline-block;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    padding: 2px 8px;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 0.9em;
-}
-
-/* 3. Header Right (Details & Buttons) */
-.header-right {
-    text-align: right;
-    padding-left: 10px;
-    position: relative;
-    z-index: 1; 
-}
-
-.personal-info {
-    font-size: 0.95em;
-    font-weight: 500;
-    color: var(--dark-blue);
-    margin-bottom: 10px;
-}
-
-.personal-info p {
-    margin: 3px 0;
-}
-
-.contact-button {
-    display: block;
-    background-color: var(--white);
-    color: var(--dark-blue);
-    padding: 6px 12px;
-    border: 2px solid var(--dark-blue);
-    border-radius: var(--border-radius);
+a {
     text-decoration: none;
-    font-size: 0.9em;
+    color: inherit;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+h1{
+
+    font-size: 3.375rem;
+}
+
+h2{
+    font-size: 2.688rem;
+}
+
+h3{
+    font-size: 2.25rem;
+}   
+
+
+h4{
+    font-size: 1.4rem;
     font-weight: 600;
-    margin-top: 8px;
-    transition: background-color 0.2s;
-    margin-left: auto; 
-    width: fit-content;
+    color: var(--primary-color);
 }
 
-.contact-button:hover {
-    background-color: var(--dark-blue);
-    color: var(--white);
+.navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-/* MAIN CONTENT (TWO COLUMNS) */
-.main-content {
-    display: grid;
-    grid-template-columns: 2fr 2fr; 
-    gap: 30px;
-}
-
-/* Section Blocks (General Styling) */
-.section.block {
-    background-color: var(--white);
-    padding: 16px 16px;
-    margin-bottom: 25px;
+.navbar-framed {
+    border: 1px solid var(--primary-color);
     border-radius: var(--border-radius);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 1rem;
+    background-color: white;
 }
 
-.title-uppercase {
-    color: var(--dark-blue);
-    font-size: 1.4em;
-    font-weight: 600;
-    border-bottom: 2px solid var(--light-blue);
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-/* ITEM STYLING (EXPERIENCES / VOLUNTEERING / CONFERENCES) */
-.item {
-    margin-bottom: 20px;
-}
-
-.item-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9em;
-    margin-bottom: 5px;
-}
-
-.date.bullet-point {
-    position: relative;
-    padding-left: 15px; 
-    font-weight: 600;
-    color: var(--dark-blue);
-}
-
-.date.bullet-point::before {
-    content: '•';
-    color: var(--dark-blue);
-    font-weight: 900;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.location {
-    color: #555;
+.nav-link {
     font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--text-color) !important;
 }
 
-.item .title {
-    margin: 0 0 3px 0;
-    font-size: 1.05em;
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
     font-weight: 600;
-    color: var(--black);
 }
 
-.item .description {
-    margin: 0;
-    font-size: 0.8em;
-    color: #444; 
+.btn {
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
 }
 
-/* Right Column Specific Adjustments */
-.left-column,
-.right-column{
+.btn:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-link {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-link:hover {
+    background-color: var(--bg-color);
+    color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-link::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('img/link.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.btn-link:hover::after {
+    filter: brightness(0);
+}
+
+
+/* Project Cards */
+.project-card {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 4px 15px rgba(33, 103, 206, 0.15);
+    padding: 3.75rem;
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+}
+
+.gap-60 {
+    gap: 3.75rem !important;
+}
+
+.content-gap-30 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1.875rem;
+    align-items: flex-start;
 }
 
-/* LANGUAGE BADGES */
-.languages-block {
-    background-color: var(--white);
-    border: none; 
-    box-shadow: none;
-    padding: 16px 0; 
+.text-primary-custom {
+    color: var(--primary-color);
 }
 
-.language-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.rounded-custom {
+    border-radius: var(--border-radius);
 }
 
-.language-badge {
-    display: flex;
-    align-items: center;
-    background-color: var(--dark-blue);
-    padding: 5px 10px;
-    border-radius: 50px;
-    gap: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+img {
+    max-width: 100%;
+    height: 2rem;
 }
 
-.level-circle, .lang-circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8em;
-    font-weight: 600;
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
 }
 
-.c2, .c1, .a2 {
-    background-color: var(--blue-c1-c2); 
-    color: var(--white);
+.main-portrait {
+    max-width: 80%;
+    border: 5px solid var(--bg-color);
 }
 
-.white-bg {
-    background-color: var(--white);
-    color: var(--dark-blue);
+.image-stack {
+    position: relative;
+    z-index: 1;
 }
 
-/* EDUCATION BLOCK (DARK BLUE BACKGROUND) */
-.resume-container
-    .education-block {
-        background-color: var(--dark-blue);
-        color: var(--white);
+h1.display-4 {
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.2;
 }
 
-.education-block .title-uppercase {
-    color: var(--white);
-    border-bottom-color: rgba(255, 255, 255, 0.3);
+p.lead {
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 90%;
 }
 
-.education-block .title {
-    color: var(--white);
-    font-weight: 500;
+
+.btn-outline-primary.btn-custom {
+    color: var(--text-color);
+    border: 2px solid var(--secondary-color);
+    border-color: var(--secondary-color);
+    background-color: transparent;
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.5rem;
 }
 
-.education-block .date,
-.education-block .location {
-    color: var(--white);
-    opacity: 0.9;
+.btn-outline-primary.btn-custom:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: none;
 }
 
-.education-block .description {
-    color: var(--white);
-    opacity: 0.8;
+footer {
+    background-color: transparent;
 }
 
-/* Links in Education Block */
-.education-block a {
-    color: var(--white);
-    text-decoration: underline;
+.footer-links a {
+    text-decoration: none;
+    font-size: 1.25rem;
 }
 
-/* Print Optimization */
-@media print {
-    body {
-        background: none;
-        padding: 0;
-    }
-    .resume-container {
-        box-shadow: none;
-        width: 100%;
-        border-radius: 0;
-    }
-    .section.block, .header, .contact-button {
-        border-radius: 0;
-        box-shadow: none;
-        border: none !important;
-    }
-    .contact-button {
-        background-color: var(--white) !important;
-        color: var(--dark-blue) !important;
-        border: 1px solid var(--dark-blue) !important;
-    }
+.footer-links a:hover {
+    color: var(--primary-color) !important;
 }

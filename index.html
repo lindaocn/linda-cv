@@ -1,173 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Linda Elbs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Linda Elbs - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="resume-container">
-        
-        <header class="header">
-            <div class="header-left">
-                <h1 class="name">LINDA ELBS</h1>
-                <p class="objective">
-                    I am looking for a <span class="badge">12-week internship</span> in web development, <span class="badge">starting on 20 April 2026</span>.
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container navbar-framed">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">My Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <a href="#contact" class="btn">Contact me</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 mb-4">Born in the mountains,<br>living at the ocean.</h1>
+                        <p class="mb-5">
+                            After my German Baccalaureate, passion for the ocean and France led me to study in Bordeaux.
+                        </p>
+
+                    </div>
+
+                    <!-- Right Column: Images -->
+                    <div class="col-lg-6 position-relative text-center">
+                        <div class="image-stack mt-5 mt-lg-0">
+                            <img src="img/laptop.webp" class="img-fluid position-absolute top-0 end-0 opacity-25"
+                                style="z-index: -1; transform: translate(20%, -20%);" alt="Laptop">
+                            <img src="img/portrait1.webp" class="img-fluid" alt="Linda Elbs">
+                        </div>
+                    </div>
+
+                    <div class="row mb-5 mt-5">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <div class="d-flex align-items-start gap-3">
+                                <img src="img/education.svg" alt="Education" width="50">
+                                <div>
+                                    <h2 class="mb-1">Education</h2>
+                                    <p class="mb-0">Bachelor’s degree in Web development (Multimedia and Internet)
+                                        at University Institute of Technology Bordeaux Montaigne</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start gap-3">
+                                <img src="img/languages.svg" alt="Languages" width="50">
+                                <div>
+                                    <h2 class="mb-1">Languages</h2>
+                                    <p class="mb-0">Native in German<br>Proficient English & French<br>Beginner in
+                                        Spanish & Italian</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <a href="Linda Elbs Cv.pdf" class="btn">Read my Resume here</a>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mb-3">Selection of projects in university</h2>
+                <p class=" mx-auto" style="max-width: 700px;">
+                    Collaborating on practical team projects, working on mastery and navigating challenges are part of
+                    my studies. Discover my recent projects.
                 </p>
             </div>
-            
-            <div class="header-right">
-                <div class="personal-info">
-                    <p>20 years, German</p>
+
+            <div class="d-flex flex-column gap-60">
+                <div class="project-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="img/placeholder-img.svg" alt="Data Analysis" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="content-gap-30">
+                                <div>
+                                    <h4>Data analysis (API, Data bases)</h4>
+                                    <p class="mb-0">• October 2024</p>
+                                </div>
+                                <p class="mb-0">
+                                    Analysing and treating large databases
+                                    in JSON and Excel files, and visualising the
+                                    results to 'What impact do chatbots have on young people's mental health?'.
+                                </p>
+                                <a href="https://lindaocn.github.io/mentalhealthandai/" class="btn-link">Discover the
+                                    Analysis</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="https://github.com/lindaocn" class="contact-button">GitHub: lindaocn</a>
-                <a href="https://linkedin.com/in/LindaElbs" class="contact-button">LinkedIn: Linda Elbs</a>
-                <a href="mailto:contact@lindaelbs.com" class="contact-button">contact@lindaelbs.com</a>
-                <div class="personal-info">
-                    <p>lindaelbs.com</p>
+
+                <div class="project-card">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-md-4 text-center">
+                            <img src="img/placeholder-img.svg" alt="Backend Project" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="content-gap-30">
+                                <div>
+                                    <h4>Backend Project (Ruby on Rails)</h4>
+                                    <p class="mb-0">• February 2024</p>
+                                </div>
+                                <p class="mb-0">
+                                    A website containing ocean-themed recipes in blog format, allowing you to delete,
+                                    create, edit and display them using Ruby on Rails and Bootstrap.
+                                </p>
+                                <a href="https://waveyrecipes.osc-fr1.scalingo.io/" class="btn-link">Discover
+                                    Marmi'thon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="img/placeholder-img.svg" alt="Laravel" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="content-gap-30">
+                                <div>
+                                    <h4>Backend Project (Laravel)</h4>
+                                    <p class="mb-0">• September 2023</p>
+                                </div>
+                                <p class="mb-0">
+                                    Developing a web application for surf rentals with a login area for
+                                    managing (Create, Delete, Update) the bookings, using the Laravel (PHP)
+                                    framework and Bootstrap.
+                                </p>
+                                <a href="https://github.com/lindaocn/oceanside" class="btn-link">Discover it on
+                                    GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-md-4 text-center">
+                            <img src="img/aki-logo.svg" alt="Aki Tu Penses" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="content-gap-30">
+                                <div>
+                                    <h4>Aki'Tu penses</h4>
+                                    <p class="mb-0">• January 2024</p>
+                                </div>
+                                <p class="mb-0">
+                                    This is an application built using Vue JS that has been designed for
+                                    the Bacchia Night event at the Fine Arts Museum in Bordeaux.
+                                    Players select a character from several drawings, and the application
+                                    reveals fun facts about it.
+                                </p>
+                                <a href="https://aki-tu-penses.netlify.app/" class="btn-link">Play the game</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteering" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mb-3">Volunteering</h2>
+                <p class=" mx-auto" style="max-width: 700px;">
+                    Digital plus meeting real power people has always been in line with my misery work as connecting to
+                    an international level and supporting young people in politics.
+                </p>
+            </div>
+
+            <div class="row" style="--bs-gutter-x: 3.75rem; --bs-gutter-y: 3.75rem;">
+                <div class="col-md-6">
+                    <div class="project-card h-100 text-center d-flex flex-column">
+                        <img src="img/esn-logo.webp" alt="ESN" class="img-fluid mx-auto mb-3" style="max-height: 80px;">
+                        <h4 class="mb-2">Erasmus Student Network: Bordeaux and International</h4>
+                        <p class="  mb-2">• Since September 2023</p>
+                        <p class="mb-4">Supporting international students in Bordeaux and helping the campus move to a
+                            more international manner.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="btn-link">Discover ESN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="project-card h-100 text-center d-flex flex-column">
+                        <img src="img/dvbj-logo.webp" alt="DVBJ" class="img-fluid mx-auto mb-3"
+                            style="max-height: 80px;">
+                        <h4 class="mb-2">Federation of Bavarian youth representatives</h4>
+                        <p class="  mb-2">• 2022 - Aug 2023</p>
+                        <p class="mb-4">Responsible for the maintenance and updating the content of their WordPress
+                            website.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="btn-link">Discover DVBJ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="project-card">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center">
+                                <img src="img/jupa-logo.webp" alt="Youth Parliament"
+                                    class="img-fluid mx-auto mb-3 mb-md-0" style="max-height: 140px;">
+                                <!-- Increased max-height slightly for better fit in big card -->
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="mb-2">Youth parliament Underberg</h4>
+                                <p class="  mb-2">• 2020 - 2022</p>
+                                <p class="mb-4">Internal management went to manage the facilitating the viral and public
+                                    meetings with the city council. Discussions about youth politics at the ocean
+                                    continued
+                                    socially with members of the youth council.</p>
+                                <div>
+                                    <a href="#" class="btn-link">Discover JuPa</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <main class="main-content">
-            
-            <section class="left-column">
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mb-3">Projects as a volunteer</h2>
+                <p class=" mx-auto" style="max-width: 700px;">
+                    Concrete problems are hard to overcome joining forces for any other one can move a mountain.
+                    Organizational role-play or pure passion to support them.
+                </p>
+            </div>
 
-                <div class="section block">
-                    <h2 class="title-uppercase">EXPERIENCES</h2>
-                    
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date bullet-point">05/2025 - 07/2025</span>
-                            <span class="location">Bordeaux (FR)</span>
-                        </div>
-                        <h3 class="title">Internship in front-end web development at the cooperate noesya</h3>
-                        <p class="description">Integration of models with the Open Source Content Management System Osuny (frontend: SASS, HTML, CSS, Bootstrap, backend: Ruby on Rails)</p>
+            <div class="card border-0 shadow-sm p-4 rounded-custom bg-white">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="img/sportsecowe.svg" alt="Sportif & Ecologique" class="img-fluid rounded"
+                            style="max-height: 300px;">
                     </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date bullet-point">Since 07/2023</span>
-                            <span class="location">Germany (Remote)</span>
-                        </div>
-                        <h3 class="title">Responsable for the dvbj.de's website</h3>
-                        <p class="description">Developing design ideas and integrating them with WordPress (HTML, CMS and plugins), Teamwork</p>
+                    <div class="col-md-7">
+                        <h4>Sports and ecology weekend at the ocean</h4>
+                        <p class="  mb-2">• September 2023</p>
+                        <p class="mb-3">
+                            Co-founder of the student association of the ocean, I organized a sports and ecology
+                            weekend. We aimed to bring together students from Bordeaux to access of sea as we cleaned
+                            rubbish from the beach with two associations and took part in some surfing classes surfing
+                            with a surf school.
+                        </p>
+                        <a href="#" class="btn-link">Watch the event video</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="section block">
-                    <h2 class="title-uppercase">VOLUNTEERING</h2>
-                    
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date bullet-point">since 2019</span>
-                            <span class="location">Bordeaux (Fr)</span>
-                        </div>
-                        <h3 class="title">Secretary of the student association MMI</h3>
-                        <p class="description">Organisation of a sports & ecological weekend</p>
-                    </div>
-                    
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date bullet-point">since 9/2025</span>
-                            <span class="location">Bordeaux (FR), Remote</span>
-                        </div>
-                        <h3 class="title">Volunteer Erasmus Student Network</h3>
-                        <p class="description">Local volunteer to support and encourage Erasmus students for ESN Bordeaux. International volunteer to develop an artificial intelligence for ESN International</p>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date bullet-point">2020 - 2023</span>
-                            <span class="location">Lindenberg (GER)</span>
-                        </div>
-                        <h3 class="title">Media manager and president of the youth parliament in Lindenberg</h3>
-                        <p class="description">Project management, event management, chairing internal and public meetings with the city council, Exchange on youth politics at European conferences</p>
-                    </div>
-                    
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date bullet-point">since 2019</span>
-                            <span class="location">Germany (Remote)</span>
-                        </div>
-                        <h3 class="title">Support courses</h3>
-                        <p class="description">Assignment help & teaching in maths, English, French</p>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="mb-5 text-center text-md-start">Contact me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <div class="d-flex flex-column gap-3">
+                        <a href="https://www.instagram.com/lindaelbs.wvs/"
+                            class="btn btn-outline-primary btn-custom d-flex align-items-center gap-3 text-start p-3 w-100">
+                            <img src="img/instagram.svg" alt="Instagram" width="24">
+                            <span>Chat with me on Instagram</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lindaelbs/"
+                            class="btn btn-outline-primary btn-custom d-flex align-items-center gap-3 text-start p-3 w-100">
+                            <img src="img/linkedin.svg" alt="LinkedIn" width="24">
+                            <span>Leave me a message on LinkedIn</span>
+                        </a>
+                        <a href="mailto:lindaelbs@gmail.com"
+                            class="btn btn-outline-primary btn-custom d-flex align-items-center gap-3 text-start p-3 w-100"> 
+                            <img src="img/mail.svg" alt="Mail" width="24">
+                            <span>Write me an E mail</span>
+                        </a>
                     </div>
                 </div>
-            </section>
-            
-            <section class="right-column">
-                
-                <div class="section block languages-block">
-                    <h2 class="title-uppercase">LANGUAGES</h2>
-                    
-                    <div class="language-group">
-                        <div class="language-badge group-1">
-                            <div class="level-circle c2">C2</div>
-                            <div class="lang-circle white-bg">DE</div>
-                        </div>
-                        <div class="language-badge group-2">
-                            <div class="level-circle c1">C1</div>
-                            <div class="lang-circle white-bg">EN</div>
-                            <div class="lang-circle white-bg">FR</div>
-                        </div>
-                        <div class="language-badge group-3">
-                            <div class="level-circle a2">A2</div>
-                            <div class="lang-circle white-bg">ES</div>
-                        </div>
+                <div class="col-md-6 text-center">
+                    <img src="img/portrait2.webp" alt="Linda Elbs" class="img-fluid shadow-lg"
+                        style="border-radius: 20px; max-width: 80%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-3 position-relative mt-5">
+        <div class="footer-bg"
+            style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;">
+            <img src="img/waves.webp" alt="Waves" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.2;">
+        </div>
+
+        <div class="container position-relative z-1">
+            <div class="row align-items-end">
+                <div class="col-md-8">
+                    <div class="d-flex gap-4 mb-4">
+                        <a href="#"><img src="img/instagram.svg" alt="Instagram" width="30"></a>
+                        <a href="#"><img src="img/linkedin.svg" alt="LinkedIn" width="30"></a>
+                        <a href="#"><img src="img/mail.svg" alt="Website" width="30"></a> 
+                        <a href="#"><img src="img/github.svg" alt="Github" width="30"></a>
                     </div>
+
+                    <div class="d-flex flex-wrap gap-4 mb-4 footer-links">
+                        <p>Pages Overview</p>
+                        <a href="#" >Home</a>
+                        <a href="#about">About me</a>
+                        <a href="#projects">My projects</a>
+                        <a href="#contact">Contact me</a>
+                    </div>
+
+                    <p class="  mb-0">Copyright © Linda Elbs</p>
                 </div>
 
-                <div class="section block education-block">
-                    <h2 class="title-uppercase">EDUCATION</h2>
-                    
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date">2024 - 2027</span>
-                        </div>
-                        <h3 class="title">Bachelor's degree in Web development and interactive devices (Multimedia and Internet, MMI) at University Institute of Technology Bordeaux Montaigne</h3>
-                    </div>
-
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date">02/2024</span>
-                        </div>
-                        <h3 class="title">Distance learning course in media informatics at International University</h3>
-                    </div>
-                    
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date">06/2023</span>
-                        </div>
-                        <h3 class="title">Baccalaureate, Highschool Lindenberg 707/900 (1,7)</h3>
-                    </div>
+                <div class="col-md-4 text-end d-none d-md-block">
+                    <img src="img/logo.svg" alt="Logo" style="height: 100px; opacity: 0.8;">
                 </div>
+            </div>
+        </div>
+    </footer>
 
-                <div class="section block">
-                    <h2 class="title-uppercase">CONFERENCES ON AI</h2>
-                    
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date">11/10/2025</span>
-                            <span class="location">Bordeaux (FR)</span>
-                        </div>
-                        <h3 class="title">Intelligence(s): The world, Al and me? (Cap Sciences)</h3>
-                    </div>
-                    
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="date">27/03/2025</span>
-                            <span class="location">Bordeaux (FR)</span>
-                        </div>
-                        <h3 class="title">TALK IT Tour - Special IA (Younup)</h3>
-                        <p class="description">DALL-E: Transforming ideas into images, generative Al, integrating LLMs into applications</p>
-                    </div>
-                </div>
-
-            </section>
-        </main>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
