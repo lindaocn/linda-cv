@@ -158,7 +158,7 @@ h4 {
     border-radius: var(--border-radius);
 }
 
-img {
+nav img {
     max-width: 100%;
     height: 2rem;
 }
